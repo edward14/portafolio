@@ -47,10 +47,10 @@ export default function Hero() {
           className="space-y-1"
         >
           <p className="text-base md:text-lg lg:text-xl xl:text-2xl text-neutral-600 dark:text-neutral-300 font-light">
-            Técnico en Sistemas
+            Profesional en Sistemas
           </p>
           <p className="text-base md:text-lg lg:text-xl xl:text-2xl text-neutral-600 dark:text-neutral-300 font-light">
-            Técnico en Programación de Software
+            & Desarrollo de Software
           </p>
         </motion.div>
         <motion.p

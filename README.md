@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Portafolio - Edward Echandia
 
-## Getting Started
+Portafolio personal desarrollado con Next.js 14, presentando mis servicios como Profesional en Sistemas y Desarrollo de Software.
 
-First, run the development server:
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=flat&logo=vercel)](https://vercel.com)
+[![Next.js](https://img.shields.io/badge/Next.js-14-black?style=flat&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3-38B2AC?style=flat&logo=tailwind-css)](https://tailwindcss.com/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## ✨ Características
+
+- 🌙 **Modo Oscuro** - Toggle para cambiar entre tema claro y oscuro
+- 🎨 **Animaciones Fluidas** - Transiciones suaves con Framer Motion
+- 📱 **Diseño Responsive** - Adaptado a todos los dispositivos
+- ⚡ **Rendimiento Optimizado** - Carga rápida con Next.js
+- 📧 **Formulario de Contacto** - Integrado con Formspree
+
+## 🛠️ Tecnologías
+
+| Tecnología | Uso |
+|------------|-----|
+| **Next.js 14** | Framework React con App Router |
+| **TypeScript** | Tipado estático |
+| **Tailwind CSS** | Estilos utilitarios |
+| **Framer Motion** | Animaciones |
+| **Lucide React** | Iconos |
+| **pnpm** | Gestor de paquetes |
+
+## 📁 Estructura del Proyecto
+
+```
+portafolio/
+├── app/
+│   ├── page.tsx          # Página de inicio (Hero)
+│   ├── about/            # Sobre mí
+│   ├── projects/         # Proyectos
+│   ├── services/         # Servicios
+│   ├── blog/             # Blog
+│   └── contact/          # Contacto
+├── components/
+│   ├── layout/           # Header, Sidebar
+│   └── ui/               # Hero, TechStack
+├── data/
+│   └── projects.ts       # Datos de proyectos
+└── public/
+    └── projects/         # Imágenes de proyectos
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Instalación
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Clonar repositorio
+git clone https://github.com/edward14/portafolio.git
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Entrar al directorio
+cd portafolio
 
-## Learn More
+# Instalar dependencias
+pnpm install
 
-To learn more about Next.js, take a look at the following resources:
+# Iniciar servidor de desarrollo
+pnpm dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📦 Scripts
 
-## Deploy on Vercel
+| Comando | Descripción |
+|---------|-------------|
+| `pnpm dev` | Inicia el servidor de desarrollo |
+| `pnpm build` | Genera build de producción |
+| `pnpm start` | Inicia servidor de producción |
+| `pnpm lint` | Ejecuta ESLint |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🌐 Despliegue
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Este proyecto está desplegado en **Vercel**. Cada push a la rama `main` genera un nuevo despliegue automáticamente.
+
+## 📞 Servicios Ofrecidos
+
+- 💻 Desarrollo Frontend (React, Next.js, TailwindCSS)
+- 🖥️ Desarrollo Backend (Node.js, Express, JWT)
+- 📊 Sistemas Administrativos a la Medida
+- 🗄️ Integración de Bases de Datos
+- 🤖 Automatización y Scripting
+- 🛠️ Soporte Técnico
+- 🔌 Cableado Estructurado
+- 📹 Sistemas de CCTV
+
+## 📄 Licencia
+
+MIT © Edward Echandia

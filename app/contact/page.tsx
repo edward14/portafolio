@@ -144,8 +144,8 @@ export default function ContactPage() {
                         </p>
 
                         <div className="space-y-4">
-                            <p className="font-mono text-lg">edward@tuportafolio.com</p>
-                            <p className="font-mono text-lg">+1 (555) 123-4567</p>
+                            <p className="font-mono text-lg">edwardandrese14@gmail.com</p>
+                            <p className="font-mono text-lg"></p>
                         </div>
                     </div>
 

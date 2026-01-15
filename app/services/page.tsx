@@ -62,8 +62,8 @@ export default function ServicesPage() {
     return (
         <div className="space-y-12 pb-20">
             <header>
-                <h1 className="text-5xl md:text-8xl font-black mb-6">Servicios</h1>
-                <p className="text-xl md:text-2xl text-neutral-600 dark:text-neutral-400 max-w-2xl font-light">
+                <h1 className="text-3xl md:text-5xl font-black tracking-tight mb-6">Servicios</h1>
+                <p className="text-lg text-neutral-600 dark:text-neutral-400 max-w-2xl font-light">
                     Soluciones digitales y técnicas a medida para tus necesidades.
                 </p>
             </header>
@@ -74,7 +74,7 @@ export default function ServicesPage() {
                         <div className="w-12 h-12 bg-neutral-100 dark:bg-neutral-700 rounded-xl flex items-center justify-center mb-6 text-neutral-900 dark:text-neutral-100">
                             <service.icon size={24} />
                         </div>
-                        <h3 className="text-2xl font-bold mb-3">{service.title}</h3>
+                        <h3 className="text-xl font-bold mb-3">{service.title}</h3>
                         <p className="text-neutral-600 dark:text-neutral-400 mb-6 leading-relaxed">{service.description}</p>
                         <Link
                             href="/contact"

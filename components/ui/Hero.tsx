@@ -5,13 +5,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function Hero() {
-  useEffect(() => {
-    // Prevent scrolling on the home page
-    document.body.style.overflow = "hidden";
-    return () => {
-      document.body.style.overflow = "unset";
-    };
-  }, []);
+
 
   return (
     <section className="relative h-screen flex flex-col md:flex-row items-center justify-center overflow-hidden px-4">
@@ -59,7 +53,7 @@ export default function Hero() {
           transition={{ delay: 0.8, duration: 0.6 }}
           className="mt-6 text-sm md:text-base text-neutral-400 dark:text-neutral-500 italic"
         >
-          Despliega el menú para conocer más
+          Descubre mi trabajo
         </motion.p>
       </motion.div>
 
@@ -94,7 +88,7 @@ export default function Hero() {
           />
         </div>
       </motion.div>
-    </section>
+    </section >
   );
 }
 

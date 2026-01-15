@@ -83,34 +83,41 @@ const technologies = [
 
 export default function TechStack() {
     return (
-        <section className="py-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-                Tecnologías
-            </h2>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
-                {technologies.map((tech, index) => {
-                    const techData = techIcons[tech];
-                    return (
-                        <motion.div
-                            key={tech}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ delay: index * 0.1 }}
-                            viewport={{ once: true }}
-                            className="group flex flex-col items-center justify-center p-6 bg-white border border-neutral-200 rounded-2xl hover:border-neutral-400 hover:shadow-lg transition-all duration-300"
-                        >
-                            <div
-                                className="mb-3 transition-colors duration-300"
-                                style={{ color: techData?.color || "#000" }}
+        <section className="py-20 px-4 md:px-8 bg-white dark:bg-neutral-900">
+            <div className="max-w-6xl mx-auto">
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                        Tecnologías
+                    </h2>
+                    <p className="text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
+                        Las herramientas y tecnologías que uso para crear experiencias digitales excepcionales.
+                    </p>
+                </div>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+                    {technologies.map((tech, index) => {
+                        const techData = techIcons[tech];
+                        return (
+                            <motion.div
+                                key={tech}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ delay: index * 0.1 }}
+                                viewport={{ once: true }}
+                                className="group flex flex-col items-center justify-center p-6 bg-neutral-50 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-800 rounded-2xl hover:border-blue-500/50 dark:hover:border-blue-500/50 hover:shadow-lg transition-all duration-300"
                             >
-                                {techData?.icon}
-                            </div>
-                            <span className="text-sm font-medium text-neutral-700 group-hover:text-neutral-900">
-                                {tech}
-                            </span>
-                        </motion.div>
-                    );
-                })}
+                                <div
+                                    className="mb-3 transition-colors duration-300"
+                                    style={{ color: techData?.color || "#000" }}
+                                >
+                                    {techData?.icon}
+                                </div>
+                                <span className="text-sm font-medium text-neutral-700 dark:text-neutral-300 group-hover:text-neutral-900 dark:group-hover:text-white">
+                                    {tech}
+                                </span>
+                            </motion.div>
+                        );
+                    })}
+                </div>
             </div>
         </section>
     );

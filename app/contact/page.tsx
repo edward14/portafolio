@@ -18,8 +18,10 @@ export default function ContactPage() {
         setStatus("submitting");
 
         try {
-            // Using Formspree - Replace YOUR_FORM_ID with your actual Formspree form ID
-            const response = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
+            // Using Formspree - Get your ID from https://formspree.io/
+            // and add NEXT_PUBLIC_FORMSPREE_ID to your .env.local file
+            const formId = process.env.NEXT_PUBLIC_FORMSPREE_ID || "YOUR_FORM_ID";
+            const response = await fetch(`https://formspree.io/f/${formId}`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -41,8 +43,8 @@ export default function ContactPage() {
     return (
         <div className="space-y-12 pb-20">
             <header>
-                <h1 className="text-5xl md:text-8xl font-black mb-6">Contacto</h1>
-                <p className="text-xl md:text-2xl text-neutral-600 dark:text-neutral-400 max-w-2xl font-light">
+                <h1 className="text-3xl md:text-5xl font-black tracking-tight mb-6">Contacto</h1>
+                <p className="text-lg text-neutral-600 dark:text-neutral-400 max-w-2xl font-light">
                     ¿Tienes un proyecto en mente? Hablemos.
                 </p>
             </header>
@@ -145,23 +147,24 @@ export default function ContactPage() {
 
                         <div className="space-y-4">
                             <p className="font-mono text-lg">edwardandrese14@gmail.com</p>
-                            <p className="font-mono text-lg"></p>
+
                         </div>
                     </div>
 
                     <div className="mt-12">
                         <p className="text-sm text-neutral-500 uppercase tracking-widest mb-4">Redes Sociales</p>
                         <div className="flex gap-4">
-                            <a href="https://twitter.com/tu_usuario" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors cursor-pointer">
+                            {/* TODO: Update these links with your actual social media profiles */}
+                            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors cursor-pointer">
                                 <Twitter size={18} />
                             </a>
-                            <a href="https://linkedin.com/in/tu_usuario" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors cursor-pointer">
+                            <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors cursor-pointer">
                                 <Linkedin size={18} />
                             </a>
-                            <a href="https://instagram.com/tu_usuario" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors cursor-pointer">
+                            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors cursor-pointer">
                                 <Instagram size={18} />
                             </a>
-                            <a href="https://github.com/tu_usuario" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors cursor-pointer">
+                            <a href="https://github.com/edward14" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors cursor-pointer">
                                 <Github size={18} />
                             </a>
                         </div>
